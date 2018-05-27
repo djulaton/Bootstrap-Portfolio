@@ -1,3 +1,7 @@
+main {
+	margin-top: 8.5em;
+}
+
 .container-fluid {
     padding: 20px;
     background-color: rgb(231, 226, 226);
@@ -34,13 +38,77 @@
     
 .h1 {
     text-align: center;
+
+}
+
+.lead {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
 }
 
 .jumbotron {
     background-image: url('../images/sf.jpg');
+    height:500px;
+    padding-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom:1px solid #ff6a00;
     color: white;
-    height: 400px;
 }
+
+.jumbotron .container {
+    position:relative;
+    top:50px;
+}
+
+/* CSS for Portfolio */
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* End of CSS for Portfolio */
 
 .typewriter h2 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -51,6 +119,17 @@
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
+}
+
+footer {
+	margin-top: 7em;
+	border-top: 5px solid #4aaaa5;
+    background-color: #666666;
+    color: white;
+	height:	100%;
+	text-align: center;
+    padding-top: 30px;
+    font-size: 10px;
 }
 
 /* The typing effect */
