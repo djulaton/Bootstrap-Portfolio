@@ -95,11 +95,19 @@ div.desc {
         width: 49.99999%;
         margin: 6px 0;
     }
+
+    .typewriter h2 {
+        width: 58%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .responsive {
         width: 100%;
+    }
+
+    .typewriter h2 {
+        width: 295px;
     }
 }
 
